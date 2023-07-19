@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+html {
+    --s: 200px; /* control the size */
+    --c: #fff; /* first color */
+    
+    --_g: #0000 8%,var(--c) 0 17%,#0000 0 58%;
+    background: 
+      linear-gradient(135deg,#0000 20.5%,var(--c) 0 29.5%,#0000 0) 0 calc(var(--s)/4),
+      linear-gradient( 45deg,var(--_g)) calc(var(--s)/2) 0,
+      linear-gradient(135deg,var(--_g),var(--c) 0 67%,#0000 0),        
+      linear-gradient( 45deg,var(--_g),var(--c) 0 67%,#0000 0 83%,var(--c) 0 92%,#0000 0),
+      #1095c1; /* second color */
+    background-size: var(--s) var(--s);
+  }
+/* 
+  html{
+    background: rgb(255,0,0);
+background: linear-gradient(125deg, rgba(255,0,0,1) 0%, rgba(84,75,255,1) 100%);
+height: 100%;
+  } */
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  
+/* Chromium & Safari*/
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+/* Firefox */
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.head{
+    background-color: #1095c1;
+    position: relative;
+    height: 30%;
+    width: 100%;
+}
+h1{
+
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: .3rem;
+    word-spacing: 0.7rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /* left: 50%; */
+    transform: translateY(-50%);
+}
+
+h1::before{
+  text-align: center;
+  width: 100%;
+  /* display: block; */
+    content:"GuessGame By Ajayy";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    z-index: -1;
+    transition: all 0.3s;
+
+}
+h1:hover::before{
+    top: 0;
+    left: 0;
+    text-decoration: underline black double 5px;
+}
+
+
+.main{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    font-weight: 600;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input{
+  /* flex: 3; */
+  height: 4rem;
+  padding: 1.2rem;
+  width: 65%;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  border: 2px solid black;
+  margin-bottom: 0.7rem;
+}
+input:hover{
+  border: 2px solid #1095c1;
+}
+button{
+  width: 30%;
+  height: 4rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  /* flex: 1; */
+  border: 2px solid black;
+  background-color: white;
+
+}
+
+button:active{
+  border: 2px solid  #1095c1;
+  color: #1095c1;
+}
+button:hover{
+  font-size: 1.7rem;
+}
+
+
+.game{
+  display: none;
+}
+
+
+.answer{
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: greenyellow;
+  width: 100%;
+  margin-top: 1rem;
+  /* border: 2px solid #1095c1; */
+  /* -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px; */
+}
+
+
+
+
+@media(width<=600px){
+  input{
+    width: 100%;
+  }
+  button{
+    width: 70%;
+    height: 3rem;
+  }
+}
+@media(width<=355px){
+  input{
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  button{
+    font-size: 1rem;
+  }
+}
+
