@@ -2,8 +2,9 @@
 
 ---------------
 
-Check All Projects Result : <a herf="https://ajaymahiwal.github.io/JavaScript/">Click ME</a>
-Linkedin Profile : <a herf="https://www.linkedin.com/in/ajaymahiwal">AjayMahiwal</a>
+Check All Projects Result : [Click ME](https://ajaymahiwal.github.io/JavaScript/)
+<br/>
+Linkedin Profile : [AjayMahiwal](https://www.linkedin.com/in/ajaymahiwal)
 
 ---------------
 # 1. Guessing Game
