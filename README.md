@@ -2,6 +2,10 @@
 
 ---------------
 
+Check All Projects Result : <a herf="https://ajaymahiwal.github.io/JavaScript/">Click ME</a>
+Linkedin Profile : <a herf="https://www.linkedin.com/in/ajaymahiwal">AjayMahiwal</a>
+
+---------------
 # 1. Guessing Game
 
 Welcome to the Guessing Game project! This is a simple web-based game where players try to guess a randomly generated secret number within a specified range.
